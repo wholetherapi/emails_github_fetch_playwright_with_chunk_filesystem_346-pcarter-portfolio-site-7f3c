@@ -1,0 +1,9 @@
+<div class="project-card">
+  <h2>{{ include.project.title }}</h2>
+  <p class="meta">{{ include.project.authors }} &middot; {{ include.project.venue }} &middot; {{ include.project.year }}</p>
+  <p class="status">{{ include.project.status }}</p>
+  <p class="abstract">{{ include.project.content }}</p>
+  {% if include.project.code_link %}
+  <a class="btn btn--code" href="{{ include.project.code_link }}">Code</a>
+  {% endif %}
+</div>

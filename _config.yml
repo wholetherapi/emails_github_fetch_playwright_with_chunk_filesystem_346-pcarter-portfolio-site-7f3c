@@ -1,0 +1,15 @@
+title: Cartograph Lab
+description: Personal portfolio of Patrick Carter and collaborators
+baseurl: ""
+url: ""
+markdown: kramdown
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
